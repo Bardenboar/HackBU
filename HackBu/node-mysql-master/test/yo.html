@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
+<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+    <pre class="hljs"><code class="java"><span class="hljs-keyword">const</span> fs
+= require(<span class="hljs-string">'fs'</span>),
+    hljs = require(<span class="hljs-string">'highlight.js'</span>)
+    file = process.argv[<span class="hljs-number">2</span>],
+    lang = process.argv[<span class="hljs-number">3</span>],
+    data = fs.readFileSync(file);
+
+var code = data.toString();
+
+console.log(<span class="hljs-string">"&lt;pre class=\"hljs\"&gt;&lt;code class=
+\""</span> + lang + <span class="hljs-string">"\"&gt;"</span>
+               + hljs.highlight(lang, code).value
+               + <span class="hljs-string">"&lt;/code&gt;&lt;/pre&gt;"</span>);
+
+
+
+    var googl = require(<span class="hljs-string">'goo.gl'</span>);
+    var shorturl = require(<span class="hljs-string">'shorturl'</span>);
+    shorturl(<span class="hljs-string">'http://www.google.com/'</span>, function
+(result) {
+    console.log(result);
+    });
+
+   <span class="hljs-comment">// var salt = bcrypt.genSaltSync(10);</span>
+
+
+    var mysql      = require(<span class="hljs-string">'mysql'</span>);
+    var connection = mysql.createConnection({
+      host     : <span class="hljs-string">'localhost'</span>,
+      user     : <span class="hljs-string">'root'</span>,
+      password : <span class="hljs-string">''</span>,
+      database : <span class="hljs-string">'nodejs_test'</span>
+    });
+    connection.connect();
+
+    connection.query(<span class="hljs-string">'SELECT * FROM test'</span>, func
+tion(err, rows, fields)
+    {
+      <span class="hljs-keyword">if</span> (err) <span class="hljs-keyword">thro
+w</span> err;
+
+      console.log(rows);
+    });
+
+    var employee = { ID: <span class="hljs-string">'3'</span>, Name: <span class
+="hljs-string">'Shravan'</span> };
+    connection.query(<span class="hljs-string">'INSERT INTO test SET ?'</span>,
+employee, function(err,res){
+    <span class="hljs-keyword">if</span>(err) <span class="hljs-keyword">throw</
+span> err;
+
+  console.log(<span class="hljs-string">'Last insert ID:'</span>, res.insertId);
+
+});
+    <span class="hljs-comment">//connection.end();  </span>
+
+</code></pre>

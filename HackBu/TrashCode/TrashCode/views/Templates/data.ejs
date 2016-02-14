@@ -1,0 +1,30 @@
+﻿<div class="jumbotron" >
+				<h1>Hello,  Thrash Coder!</h1>
+  <div ng-controller="MainCtrl" class="container">
+  <h1>Select text file</h1>
+   
+       <input type = "file" file-model = "myFile"/>
+         <button ng-click = "uploadFile()">upload me</button>
+    <div class="form-group">
+      <label for="sel1">Select Time (select one):</label>
+      <select class="form-control" id="sel1">
+        <option>Dont Save</option>
+        <option>1 Hour</option>
+        <option>7 Days</option>
+        
+      </select>
+     </div>
+    <div>
+      <a class="btn btn-default" ng-click="generate()"> Generate.!</a>
+    </div>
+ 
+    <div >
+        <h2>File content is:</h2>
+      <pre>{{content}}</pre>
+        <!-- -->
+    </div>
+</div>
+	 
+</div>
+		
+		

@@ -1,0 +1,15 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+Rectangle {
+	-fx-fill: yellow;
+}
+.layout { 
+  -fx-background-color: cornsilk;
+}
+
+.layout2 { 
+  -fx-background-color: blue;
+}
+Sphere{
+	-fx-fill: green ;
+} 

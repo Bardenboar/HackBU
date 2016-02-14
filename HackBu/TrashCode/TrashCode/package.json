@@ -1,0 +1,20 @@
+{
+  "author": {
+    "name": "jeyshah",
+    "email": "jayshah@ups.com"
+  },
+  "dependencies": {
+    "ejs": "^2.4.1",
+    "express": "3.4.4",
+    "highlight.js": "^9.1.0",
+    "language-detect": "^1.1.0",
+    "multer": "^1.1.0",
+    "mysql": "^2.10.2",
+    "shorturl": "0.0.3",
+    "stylus": "*"
+  },
+  "description": "TrashCode",
+  "main": "app.js",
+  "name": "TrashCode",
+  "version": "0.0.0"
+}

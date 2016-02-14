@@ -1,0 +1,17 @@
+{
+  "name": "ExpressApp1",
+  "version": "0.0.0",
+  "description": "ExpressApp1",
+  "main": "main.js",
+  "author": {
+    "name": "jolly",
+    "email": ""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "cipherstream": "^0.1.1",
+    "express": "3.4.4",
+    "jade": "*",
+    "stylus": "*"
+  }
+}
